@@ -963,7 +963,8 @@ def amazon_pay_balance(lst_):
             elif pay_task == 2:
                 driver.find_element_by_xpath('//*[@id="a-autoid-4"]/span').click()
                 print('Go and check the chrome tab\n'
-                      'Note: After opening the tab please click on previous page option to let the program run smoothly'
+                      'Note: After opening the tab please click on previous page(arrow on the top right part of your screen) to let the program run smoothly'
+                      'option to let the program run smoothly'
                       '\nSorry for the inconveniences, it is a beta version we will resolve this issue soon...')
                 time.sleep(30)
                 driver.find_element_by_xpath('//*[@id="adm-breadcrumb-row"]/div/div[1]/ul/li[1]/span/a/span').click()
