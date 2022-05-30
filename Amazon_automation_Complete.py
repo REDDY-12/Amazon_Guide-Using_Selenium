@@ -1080,7 +1080,7 @@ def payment_options(lst_):
                 time.sleep(15)
 
                 # go to your account
-                driver.find_element_by_xpath('//*[@id="yourOrdersContent"]/div[1]/ul/li[1]/a').click()
+                driver.find_element_by_xpath('//*[@id="nav-link-accountList"]').click()
 
                 your_account()
 
@@ -1091,7 +1091,7 @@ def payment_options(lst_):
                 time.sleep(15)
 
                 # go to your account
-                driver.find_element_by_xpath('//*[@id="breadcrumb-row"]/div/ul/li[1]/span/a').click()
+                driver.find_element_by_xpath('//*[@id="nav-link-accountList"]').click()
 
                 your_account()
 
@@ -1127,8 +1127,6 @@ def amazon_pay_balance(lst_):
                       '(arrow on the top right part of your screen) to let the program run smoothly'
                       '\nSorry for the inconveniences, it is a beta version we will resolve this issue soon...')
                 time.sleep(30)
-                driver.find_element_by_xpath('//*[@id="adm-breadcrumb-row"]/div/div[1]/ul/li[1]/span/a/span').click()
-                time.sleep(10)
 
                 amazon_pay_balance(lst_)
 
